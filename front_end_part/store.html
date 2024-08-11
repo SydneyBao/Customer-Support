@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Availability</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Store Availability</h2>
+        <form id="storeAvailabilityForm">
+            <div class="form-group">
+                <label for="availableTimes">Available Times:</label>
+                <input type="text" id="availableTimes" name="availableTimes" placeholder="e.g., 10:00 AM - 12:00 PM" required>
+            </div>
+            <button type="submit">Store Availability</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('storeAvailabilityForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Availability stored!');
+        });
+    </script>
+</body>
+</html>
